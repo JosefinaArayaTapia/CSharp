@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vhm9GGsCVPMo6cXMYSDxReE1lyWm3HDcySn/stCcM/D8snCjGfSK2KpNaF0h99JWR4C/pYAnl5pvBZ2vMeD7Uw==",
+  "success": true,
+  "projectFilePath": "D:\\Proyectos Personales\\Curso C#\\escuela\\Etapa1\\Etapa1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\araya\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

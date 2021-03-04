@@ -1,0 +1,16 @@
+D:\Proyectos Personales\Curso C#\escuela\Etapa1\bin\Debug\net5.0\Etapa1.exe
+D:\Proyectos Personales\Curso C#\escuela\Etapa1\bin\Debug\net5.0\Etapa1.deps.json
+D:\Proyectos Personales\Curso C#\escuela\Etapa1\bin\Debug\net5.0\Etapa1.runtimeconfig.json
+D:\Proyectos Personales\Curso C#\escuela\Etapa1\bin\Debug\net5.0\Etapa1.runtimeconfig.dev.json
+D:\Proyectos Personales\Curso C#\escuela\Etapa1\bin\Debug\net5.0\Etapa1.dll
+D:\Proyectos Personales\Curso C#\escuela\Etapa1\bin\Debug\net5.0\ref\Etapa1.dll
+D:\Proyectos Personales\Curso C#\escuela\Etapa1\bin\Debug\net5.0\Etapa1.pdb
+D:\Proyectos Personales\Curso C#\escuela\Etapa1\obj\Debug\net5.0\Etapa1.csprojAssemblyReference.cache
+D:\Proyectos Personales\Curso C#\escuela\Etapa1\obj\Debug\net5.0\Etapa1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos Personales\Curso C#\escuela\Etapa1\obj\Debug\net5.0\Etapa1.AssemblyInfoInputs.cache
+D:\Proyectos Personales\Curso C#\escuela\Etapa1\obj\Debug\net5.0\Etapa1.AssemblyInfo.cs
+D:\Proyectos Personales\Curso C#\escuela\Etapa1\obj\Debug\net5.0\Etapa1.csproj.CoreCompileInputs.cache
+D:\Proyectos Personales\Curso C#\escuela\Etapa1\obj\Debug\net5.0\Etapa1.dll
+D:\Proyectos Personales\Curso C#\escuela\Etapa1\obj\Debug\net5.0\ref\Etapa1.dll
+D:\Proyectos Personales\Curso C#\escuela\Etapa1\obj\Debug\net5.0\Etapa1.pdb
+D:\Proyectos Personales\Curso C#\escuela\Etapa1\obj\Debug\net5.0\Etapa1.genruntimeconfig.cache
