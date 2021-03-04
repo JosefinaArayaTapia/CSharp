@@ -8,10 +8,10 @@ namespace Etapa1
         static void Main(string[] args)
         {
 
-            var escuela = new Escuela("Plazti", 2005);
-            escuela.Pais = "Chile";
-            escuela.Ciudad = "Santiago";
-            Console.WriteLine(escuela.Nombre);
+            var escuela = new Escuela("Plazti", 2005, TiposEscuela.Primaria, Ciudad: "Santiago", Pais: "Chile");
+
+
+            Console.WriteLine(escuela);
         }
     }
 }

@@ -13,6 +13,7 @@ namespace CoreEscuela.Entidades
         public int AñodeCreacion { get; set; }
         public string Pais { get; set; }
         public string Ciudad { get; set; }
+        public TiposEscuela TipoEscuela { get; set; }
 
         // Constructor Antiguo
         // public Escuela(string Nombre, int AñoCreacion)
@@ -24,6 +25,22 @@ namespace CoreEscuela.Entidades
 
         //Nuevo Constructor
         public Escuela(string Nombre, int AñoCreacion) => (this.Nombre, AñodeCreacion) = (Nombre, AñoCreacion);
+        public Escuela(string Nombre, int AñoCreacion, TiposEscuela tipos, string Pais = "", string Ciudad = "")
+        {
+            (this.Nombre, AñodeCreacion) = (Nombre, AñoCreacion);
+            this.Pais = Pais;
+            this.Ciudad = Ciudad;
+            TipoEscuela = tipos;
+
+
+        }
+        public override string ToString()
+        {
+            string newLine = System.Environment.NewLine;
+
+            return $"Nombre= \"{Nombre}\", Tipo={TipoEscuela} {newLine} Pais={Pais}, Ciudad={Ciudad}";
+
+        }
 
     }
 
