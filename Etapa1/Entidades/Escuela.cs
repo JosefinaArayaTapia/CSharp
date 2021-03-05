@@ -15,15 +15,8 @@ namespace CoreEscuela.Entidades
         public string Ciudad { get; set; }
         public TiposEscuela TipoEscuela { get; set; }
 
-        // Constructor Antiguo
-        // public Escuela(string Nombre, int AñoCreacion)
-        // {
+        public Curso[] Cursos { get; set; }
 
-        //     this.Nombre = Nombre;
-        //     AñodeCreacion = AñoCreacion;
-        // }
-
-        //Nuevo Constructor
         public Escuela(string Nombre, int AñoCreacion) => (this.Nombre, AñodeCreacion) = (Nombre, AñoCreacion);
         public Escuela(string Nombre, int AñoCreacion, TiposEscuela tipos, string Pais = "", string Ciudad = "")
         {
