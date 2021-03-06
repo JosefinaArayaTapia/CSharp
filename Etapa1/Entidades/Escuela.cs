@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 namespace CoreEscuela.Entidades
 {
 
@@ -15,7 +16,7 @@ namespace CoreEscuela.Entidades
         public string Ciudad { get; set; }
         public TiposEscuela TipoEscuela { get; set; }
 
-        public Curso[] Cursos { get; set; }
+        public List<Curso> Cursos { get; set; }
 
         public Escuela(string Nombre, int AñoCreacion) => (this.Nombre, AñodeCreacion) = (Nombre, AñoCreacion);
         public Escuela(string Nombre, int AñoCreacion, TiposEscuela tipos, string Pais = "", string Ciudad = "")

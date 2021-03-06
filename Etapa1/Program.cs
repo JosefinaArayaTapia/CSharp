@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using CoreEscuela.Entidades;
 using static System.Console;
 
@@ -11,15 +12,40 @@ namespace Etapa1
         {
 
             var escuela = new Escuela("New Platzi", 2005, TiposEscuela.Primaria, Ciudad: "Santiago", Pais: "Chile");
+
             Curso[] arregloCursos = {
                 new Curso() { Nombre = "101" },
                 new Curso() { Nombre = "201" },
                 new Curso() { Nombre = "301" }
             };
-            escuela.Cursos = arregloCursos;
+
+            var listaCursos = new List<Curso>(){
+                new Curso() { Nombre = "101" },
+                new Curso() { Nombre = "201" },
+                new Curso() { Nombre = "301" }
+            };
+
+            escuela.Cursos = listaCursos;
+            escuela.Cursos.Add(new Curso() { Nombre = "401" });
+
+            var otraListaCursos = new List<Curso>(){
+                new Curso() { Nombre = "501" },
+                new Curso() { Nombre = "601" },
+                new Curso() { Nombre = "701" }
+            };
+
+
+            escuela.Cursos.AddRange(otraListaCursos);
+
+            escuela.Cursos.Remove
 
             ImprimirCursosEscuela(escuela);
+
+
+
         }
+
+
 
         private static void ImprimirCursosEscuela(Escuela escuela)
         {
