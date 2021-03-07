@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+
 namespace CoreEscuela.Entidades
 {
     public class Curso
@@ -8,6 +10,15 @@ namespace CoreEscuela.Entidades
 
         public TiposJornada Jornada { get; set; }
 
+        public List<Asignatura> Asignaturas { get; set; }
+        public List<Alumno> Alumnos { get; set; }
+
+
+
+        /// <summary>
+        /// Constructor de Curso
+        /// </summary>
+        /// <returns>Curso</returns>
         public Curso() => UniqueId = Guid.NewGuid().ToString();
 
     }
