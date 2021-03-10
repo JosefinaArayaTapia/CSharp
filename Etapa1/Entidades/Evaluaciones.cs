@@ -7,13 +7,10 @@ namespace CoreEscuela.Entidades
         public string Nombre { get; set; }
         public string IdAEvaluaciones { get; set; }
 
-        public Alumno AlumnoEvaludado { get; set; }
-        public Asignatura AsignaturaEvaludacion { get; set; }
+        public Alumno AlumnoEvaluado { get; set; }
+        public Asignatura AsignaturaEvaluacion { get; set; }
 
         public float Nota { get; set; }
-
-
-
 
         /// <summary>
         /// Constructor de Asignatura

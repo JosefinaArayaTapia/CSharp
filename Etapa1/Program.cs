@@ -26,9 +26,47 @@ namespace Etapa1
                 foreach (var cursos in escuela.Cursos)
                 {
                     WriteLine(cursos.Nombre);
+                    ImprimirAsignaturas(cursos);
+                    ImprimirAlumnos(cursos.Alumnos);
+
                 }
             }
 
         }
+        private static void ImprimirAsignaturas(Curso Cursos)
+        {
+            WriteLine("Cursos");
+
+            foreach (var asignatura in Cursos.Asignaturas)
+            {
+                WriteLine("-> " + asignatura.Nombre);
+            }
+
+        }
+        private static void ImprimirAlumnos(List<Alumno> Alumnos)
+        {
+            WriteLine("ALUMNOS: " + Alumnos.Count);
+
+            foreach (var alumno in Alumnos)
+            {
+                WriteLine("--> " + alumno.Nombre);
+            }
+
+        }
+        private static void ImprimirEvaluaciones(List<Evaluaciones> evaluaciones)
+        {
+            WriteLine("Evaluaciones");
+            foreach (var e in evaluaciones)
+            {
+                WriteLine(e.AlumnoEvaluado.Nombre);
+
+            }
+
+        }
+
+
+
+
+
     }
 }
