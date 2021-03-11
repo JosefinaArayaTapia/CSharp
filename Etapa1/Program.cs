@@ -25,10 +25,9 @@ namespace Etapa1
             {
                 foreach (var cursos in escuela.Cursos)
                 {
-                    WriteLine(cursos.Nombre);
-                    ImprimirAsignaturas(cursos);
-                    ImprimirAlumnos(cursos.Alumnos);
-
+                    WriteLine($"Curso - {cursos.Nombre}");
+                    // ImprimirAlumnos(cursos.Alumnos);
+                    ImprimirEvaluaciones(cursos.Evaluaciones);
                 }
             }
 
@@ -55,10 +54,10 @@ namespace Etapa1
         }
         private static void ImprimirEvaluaciones(List<Evaluaciones> evaluaciones)
         {
-            WriteLine("Evaluaciones");
+            WriteLine($"Evaluaciones: {evaluaciones.Count}");
             foreach (var e in evaluaciones)
             {
-                WriteLine(e.AlumnoEvaluado.Nombre);
+                WriteLine($"{e.AlumnoEvaluado.Nombre} - {e.AsignaturaEvaluacion.Nombre}-{e.Nota}");
 
             }
 

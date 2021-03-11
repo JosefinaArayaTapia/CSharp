@@ -25,30 +25,44 @@ namespace CoreEscuela
 
         private void CargarEvaluaciones()
         {
-            for (int i = 0; i < 5; i++)
+
+            foreach (var c in Escuela.Cursos)
             {
-                foreach (var c in Escuela.Cursos)
+                foreach (var al in c.Alumnos)
                 {
+                    var listaEvaluaciones = new List<Evaluaciones>();
                     foreach (var a in c.Asignaturas)
                     {
-                        foreach (var al in c.Alumnos)
+
+                        for (int i = 0; i < 5; i++)
                         {
-                            Evaluaciones e = new Evaluaciones();
-                            e.Nombre = $"Evaluacion - {a.Nombre}";
-                            e.AlumnoEvaluado = al;
-                            e.AsignaturaEvaluacion = a;
+                            var NombreA = $"Evaluacion - {a.Nombre}";
                             Random rnd = new Random();
                             double minimum = 0.0;
                             double maximum = 5.0;
                             double val = (rnd.NextDouble() * (maximum - minimum) + minimum);
-                            e.Nota = (float)val;
-                        }
+                            var Nota = (float)Math.Round(val, 2);
 
+                            listaEvaluaciones.Add(new Evaluaciones()
+                            {
+                                Nombre = NombreA,
+                                AlumnoEvaluado = al,
+                                AsignaturaEvaluacion = a,
+                                Nota = Nota
+                            }
+                            );
+                            c.Evaluaciones = listaEvaluaciones;
+
+                        }
 
                     }
 
+
+
                 }
+
             }
+
         }
 
         private void CargarAsignaturas()

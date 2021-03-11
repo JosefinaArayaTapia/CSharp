@@ -7,11 +7,10 @@ namespace CoreEscuela.Entidades
     {
         public string Nombre { get; set; }
         public string UniqueId { get; private set; }
-
         public TiposJornada Jornada { get; set; }
-
         public List<Asignatura> Asignaturas { get; set; }
         public List<Alumno> Alumnos { get; set; }
+        public List<Evaluaciones> Evaluaciones { get; set; }
 
 
 
